@@ -1,0 +1,90 @@
+{
+  "runner": "dependency-free assertions over unchanged test bodies",
+  "passed": true,
+  "results": [
+    {
+      "name": "IV bolus matches exponential concentration and integrated finite AUC",
+      "passed": true
+    },
+    {
+      "name": "First-order oral absorption matches the Bateman equation",
+      "passed": true
+    },
+    {
+      "name": "Pure Michaelis–Menten elimination satisfies its implicit solution",
+      "passed": true
+    },
+    {
+      "name": "Dose and molecular weight scale molar amounts correctly",
+      "passed": true
+    },
+    {
+      "name": "Effect-site equilibration matches its analytical convolution",
+      "passed": true
+    },
+    {
+      "name": "Repeated IV events are exact and use a post-dose sample convention",
+      "passed": true
+    },
+    {
+      "name": "Near-coincident floating-point event and output times do not underflow",
+      "passed": true
+    },
+    {
+      "name": "Infusion starts and stops agree with the closed-form one-compartment result",
+      "passed": true
+    },
+    {
+      "name": "Overlapping infusions and horizon truncation track only delivered drug",
+      "passed": true
+    },
+    {
+      "name": "Full binding and distribution conserve drug in a closed system",
+      "passed": true
+    },
+    {
+      "name": "Full model accounts for drug lost through all elimination routes",
+      "passed": true
+    },
+    {
+      "name": "Placebo baseline and lagged response match their coupled analytical solution",
+      "passed": true
+    },
+    {
+      "name": "Inhibition and stimulation bracket placebo response",
+      "passed": true
+    },
+    {
+      "name": "Matched baseline and turnover rates satisfy the repeated-root solution",
+      "passed": true
+    },
+    {
+      "name": "Tighter tolerances agree in the coupled nonlinear model",
+      "passed": true
+    },
+    {
+      "name": "Seeded lognormal draws repeat, change with seed, and respect zero variability",
+      "passed": true
+    },
+    {
+      "name": "Population bands are ordered and collapse with zero variability",
+      "passed": true
+    },
+    {
+      "name": "Native parallel pool preserves seeded population results exactly",
+      "passed": true
+    },
+    {
+      "name": "Typical-only run has no invented population band or patients",
+      "passed": true
+    },
+    {
+      "name": "Project JSON round trips through plain JSON with all controls",
+      "passed": true
+    },
+    {
+      "name": "Invalid inputs fail explicitly without a plausible fabricated curve",
+      "passed": true
+    }
+  ]
+}

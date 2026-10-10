@@ -1,0 +1,425 @@
+{
+  "solver": "scipy.integrate.solve_ivp / Radau",
+  "scipy_version": "1.18.1",
+  "numpy_version": "2.5.3",
+  "reference_rtol": 1e-10,
+  "reference_atol": 1e-12,
+  "comparison_bound": "abs(Dart - Radau) <= 2e-5 + 2e-5 * abs(Radau)",
+  "passed": true,
+  "results": [
+    {
+      "case": "default_full_tmdd",
+      "passed": true,
+      "samples": 241,
+      "radau_function_evaluations": 13953,
+      "reference_max_mass_balance_error_nmol": 5.4569682106375694e-12,
+      "metrics": {
+        "depotAmount": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        },
+        "concentration": {
+          "max_absolute_difference": 3.6555901772317156e-07,
+          "max_fraction_of_acceptance_bound": 0.0001644664684242478,
+          "passed": true
+        },
+        "peripheralConcentration": {
+          "max_absolute_difference": 8.106948712338635e-08,
+          "max_fraction_of_acceptance_bound": 0.00011469581457324276,
+          "passed": true
+        },
+        "target": {
+          "max_absolute_difference": 2.386217687888603e-07,
+          "max_fraction_of_acceptance_bound": 0.004870680035139044,
+          "passed": true
+        },
+        "complex": {
+          "max_absolute_difference": 2.6406094555397885e-07,
+          "max_fraction_of_acceptance_bound": 0.0031693993164163734,
+          "passed": true
+        },
+        "effectSite": {
+          "max_absolute_difference": 2.3206549570886637e-06,
+          "max_fraction_of_acceptance_bound": 0.0011761201040102062,
+          "passed": true
+        },
+        "baseline": {
+          "max_absolute_difference": 3.694822225952521e-13,
+          "max_fraction_of_acceptance_bound": 1.7602069288424906e-10,
+          "passed": true
+        },
+        "response": {
+          "max_absolute_difference": 6.865348410656225e-06,
+          "max_fraction_of_acceptance_bound": 0.0035430679019693165,
+          "passed": true
+        },
+        "eliminatedAmount": {
+          "max_absolute_difference": 6.993280976530514e-08,
+          "max_fraction_of_acceptance_bound": 3.008561520137453e-05,
+          "passed": true
+        },
+        "auc": {
+          "max_absolute_difference": 8.689897867952823e-07,
+          "max_fraction_of_acceptance_bound": 8.029222011930292e-05,
+          "passed": true
+        },
+        "administeredAmount": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        },
+        "totalDrugAmount": {
+          "max_absolute_difference": 6.993280976530514e-08,
+          "max_fraction_of_acceptance_bound": 7.556416537498303e-06,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case": "oral_bioavailability",
+      "passed": true,
+      "samples": 183,
+      "radau_function_evaluations": 23820,
+      "reference_max_mass_balance_error_nmol": 1.0686562745831907e-11,
+      "metrics": {
+        "depotAmount": {
+          "max_absolute_difference": 1.3181050505295389e-05,
+          "max_fraction_of_acceptance_bound": 0.03196866739277847,
+          "passed": true
+        },
+        "concentration": {
+          "max_absolute_difference": 4.841495595542256e-06,
+          "max_fraction_of_acceptance_bound": 0.003148406261817525,
+          "passed": true
+        },
+        "peripheralConcentration": {
+          "max_absolute_difference": 3.878883134689204e-07,
+          "max_fraction_of_acceptance_bound": 0.001442229130222653,
+          "passed": true
+        },
+        "target": {
+          "max_absolute_difference": 1.7410520580796174e-08,
+          "max_fraction_of_acceptance_bound": 0.0002953794707318135,
+          "passed": true
+        },
+        "complex": {
+          "max_absolute_difference": 2.201647175681387e-08,
+          "max_fraction_of_acceptance_bound": 0.0004982401843960015,
+          "passed": true
+        },
+        "effectSite": {
+          "max_absolute_difference": 2.6718082253296416e-06,
+          "max_fraction_of_acceptance_bound": 0.0034562282409951253,
+          "passed": true
+        },
+        "baseline": {
+          "max_absolute_difference": 3.268496584496461e-13,
+          "max_fraction_of_acceptance_bound": 1.5843230590903083e-10,
+          "passed": true
+        },
+        "response": {
+          "max_absolute_difference": 1.0264501071333143e-06,
+          "max_fraction_of_acceptance_bound": 0.0010544540985902085,
+          "passed": true
+        },
+        "eliminatedAmount": {
+          "max_absolute_difference": 1.8115508737537311e-06,
+          "max_fraction_of_acceptance_bound": 0.0014737724823145019,
+          "passed": true
+        },
+        "auc": {
+          "max_absolute_difference": 5.121859430801123e-06,
+          "max_fraction_of_acceptance_bound": 0.0014248565561128421,
+          "passed": true
+        },
+        "administeredAmount": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        },
+        "totalDrugAmount": {
+          "max_absolute_difference": 1.811560309761262e-06,
+          "max_fraction_of_acceptance_bound": 0.00017948520563069653,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case": "overlapping_infusions",
+      "passed": true,
+      "samples": 88,
+      "radau_function_evaluations": 4805,
+      "reference_max_mass_balance_error_nmol": 2.7569058147491887e-12,
+      "metrics": {
+        "depotAmount": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        },
+        "concentration": {
+          "max_absolute_difference": 5.407287062553223e-09,
+          "max_fraction_of_acceptance_bound": 1.0041036066997182e-05,
+          "passed": true
+        },
+        "peripheralConcentration": {
+          "max_absolute_difference": 2.700165424585066e-09,
+          "max_fraction_of_acceptance_bound": 3.394135827791047e-05,
+          "passed": true
+        },
+        "target": {
+          "max_absolute_difference": 8.141975982312033e-10,
+          "max_fraction_of_acceptance_bound": 1.2286372096109247e-05,
+          "passed": true
+        },
+        "complex": {
+          "max_absolute_difference": 1.0530354366267147e-09,
+          "max_fraction_of_acceptance_bound": 2.842700452892547e-05,
+          "passed": true
+        },
+        "effectSite": {
+          "max_absolute_difference": 5.680293924115176e-08,
+          "max_fraction_of_acceptance_bound": 0.00037310604455081427,
+          "passed": true
+        },
+        "baseline": {
+          "max_absolute_difference": 1.9895196601282805e-13,
+          "max_fraction_of_acceptance_bound": 9.76060005007556e-11,
+          "passed": true
+        },
+        "response": {
+          "max_absolute_difference": 1.1738384841919469e-07,
+          "max_fraction_of_acceptance_bound": 5.963120178000613e-05,
+          "passed": true
+        },
+        "eliminatedAmount": {
+          "max_absolute_difference": 3.1897684493742418e-09,
+          "max_fraction_of_acceptance_bound": 1.6820654988138123e-05,
+          "passed": true
+        },
+        "auc": {
+          "max_absolute_difference": 2.8502725513135374e-08,
+          "max_fraction_of_acceptance_bound": 6.151210763810149e-05,
+          "passed": true
+        },
+        "administeredAmount": {
+          "max_absolute_difference": 8.526512829121202e-13,
+          "max_fraction_of_acceptance_bound": 1.4081630574972868e-10,
+          "passed": true
+        },
+        "totalDrugAmount": {
+          "max_absolute_difference": 3.187267338944366e-09,
+          "max_fraction_of_acceptance_bound": 1.5270907900953221e-06,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case": "fast_binding_stimulation",
+      "passed": true,
+      "samples": 145,
+      "radau_function_evaluations": 11255,
+      "reference_max_mass_balance_error_nmol": 2.0463630789890885e-12,
+      "metrics": {
+        "depotAmount": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        },
+        "concentration": {
+          "max_absolute_difference": 7.080601847064827e-07,
+          "max_fraction_of_acceptance_bound": 0.00024674775585750247,
+          "passed": true
+        },
+        "peripheralConcentration": {
+          "max_absolute_difference": 5.156309157428041e-09,
+          "max_fraction_of_acceptance_bound": 2.4384482677569635e-05,
+          "passed": true
+        },
+        "target": {
+          "max_absolute_difference": 7.086293185576409e-07,
+          "max_fraction_of_acceptance_bound": 0.015009233763676586,
+          "passed": true
+        },
+        "complex": {
+          "max_absolute_difference": 7.078630517298734e-07,
+          "max_fraction_of_acceptance_bound": 0.0017998366172979978,
+          "passed": true
+        },
+        "effectSite": {
+          "max_absolute_difference": 7.160035409015109e-08,
+          "max_fraction_of_acceptance_bound": 4.2031256426409076e-05,
+          "passed": true
+        },
+        "baseline": {
+          "max_absolute_difference": 2.984279490192421e-13,
+          "max_fraction_of_acceptance_bound": 1.474106689784015e-10,
+          "passed": true
+        },
+        "response": {
+          "max_absolute_difference": 1.6458699292343226e-08,
+          "max_fraction_of_acceptance_bound": 6.4780206477754744e-06,
+          "passed": true
+        },
+        "eliminatedAmount": {
+          "max_absolute_difference": 4.324857627580059e-08,
+          "max_fraction_of_acceptance_bound": 6.154285836578604e-05,
+          "passed": true
+        },
+        "auc": {
+          "max_absolute_difference": 8.098254511423875e-08,
+          "max_fraction_of_acceptance_bound": 2.872494240166971e-05,
+          "passed": true
+        },
+        "administeredAmount": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        },
+        "totalDrugAmount": {
+          "max_absolute_difference": 4.324886049289489e-08,
+          "max_fraction_of_acceptance_bound": 3.6512729653674155e-06,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case": "drug_free_baseline",
+      "passed": true,
+      "samples": 145,
+      "radau_function_evaluations": 1205,
+      "reference_max_mass_balance_error_nmol": 0.0,
+      "metrics": {
+        "depotAmount": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        },
+        "concentration": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        },
+        "peripheralConcentration": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        },
+        "target": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        },
+        "complex": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        },
+        "effectSite": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        },
+        "baseline": {
+          "max_absolute_difference": 1.9764314629355795e-09,
+          "max_fraction_of_acceptance_bound": 1.6513038447855023e-06,
+          "passed": true
+        },
+        "response": {
+          "max_absolute_difference": 2.725400349845586e-09,
+          "max_fraction_of_acceptance_bound": 1.3927844596275526e-06,
+          "passed": true
+        },
+        "eliminatedAmount": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        },
+        "auc": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        },
+        "administeredAmount": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        },
+        "totalDrugAmount": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "case": "nearly_equal_event_grid",
+      "passed": true,
+      "samples": 24,
+      "radau_function_evaluations": 787,
+      "reference_max_mass_balance_error_nmol": 7.105427357601002e-15,
+      "metrics": {
+        "depotAmount": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        },
+        "concentration": {
+          "max_absolute_difference": 6.986411449361185e-12,
+          "max_fraction_of_acceptance_bound": 4.7571029022335235e-08,
+          "passed": true
+        },
+        "peripheralConcentration": {
+          "max_absolute_difference": 2.9724001038289316e-12,
+          "max_fraction_of_acceptance_bound": 1.0321261400392847e-07,
+          "passed": true
+        },
+        "target": {
+          "max_absolute_difference": 9.539036227579345e-13,
+          "max_fraction_of_acceptance_bound": 8.07423541071796e-09,
+          "passed": true
+        },
+        "complex": {
+          "max_absolute_difference": 1.1896317264614709e-12,
+          "max_fraction_of_acceptance_bound": 5.455001523772901e-08,
+          "passed": true
+        },
+        "effectSite": {
+          "max_absolute_difference": 6.923128736957551e-11,
+          "max_fraction_of_acceptance_bound": 1.2961060424976584e-06,
+          "passed": true
+        },
+        "baseline": {
+          "max_absolute_difference": 5.684341886080802e-14,
+          "max_fraction_of_acceptance_bound": 2.8134043580044984e-11,
+          "passed": true
+        },
+        "response": {
+          "max_absolute_difference": 4.150706445216201e-10,
+          "max_fraction_of_acceptance_bound": 2.0549157750665466e-07,
+          "passed": true
+        },
+        "eliminatedAmount": {
+          "max_absolute_difference": 5.425437876738215e-12,
+          "max_fraction_of_acceptance_bound": 9.1969970354216e-08,
+          "passed": true
+        },
+        "auc": {
+          "max_absolute_difference": 2.993871817125182e-11,
+          "max_fraction_of_acceptance_bound": 1.9881905182992423e-07,
+          "passed": true
+        },
+        "administeredAmount": {
+          "max_absolute_difference": 0.0,
+          "max_fraction_of_acceptance_bound": 0.0,
+          "passed": true
+        },
+        "totalDrugAmount": {
+          "max_absolute_difference": 5.4285465012071654e-12,
+          "max_fraction_of_acceptance_bound": 1.0554353465137954e-08,
+          "passed": true
+        }
+      }
+    }
+  ]
+}
